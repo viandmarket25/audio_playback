@@ -1,0 +1,3 @@
+LIBRARY   playback_mic
+EXPORTS
+   playback_mic

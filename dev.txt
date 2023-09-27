@@ -1,0 +1,12 @@
+gcc -o audio_playback aud.c -lportaudio
+
+
+gcc -o audio_p audio_process.c -lportaudio -lspeexdsp
+
+
+
+
+gcc -o audio audio_play.c 
+
+
+gcc -o play play.c -ldl -lpthread -lm -framework CoreAudio -framework CoreFoundation
