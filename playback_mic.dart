@@ -4,13 +4,13 @@
 
 import 'dart:ffi' as ffi;
 import 'dart:io' show Platform, Directory;
-
 import 'package:path/path.dart' as path;
 
 // FFI signature of the hello_world C function
-typedef HelloWorldFunc = ffi.Void Function();
-// Dart type definition for calling the C foreign function
-typedef HelloWorld = void Function();
+//typedef HelloWorldFunc = ffi.Void Function();
+
+typedef FfiFunction =ffi.Void Function();
+typedef ffiTest = void Function();
 
 void main() {
   // Open the dynamic library
@@ -27,12 +27,19 @@ void main() {
         Directory.current.path, 'audio_lib', 'Debug', 'audio_lib.dll');
   }
 
+
+  // ::::::::: dynamic library containing c function
   final dylib = ffi.DynamicLibrary.open(libraryPath);
 
-  // Look up the C function 'hello_world'
-  final HelloWorld hello = dylib
-      .lookup<ffi.NativeFunction<HelloWorldFunc>>('hello_world')
+
+  final  ffiTest ffit = dylib
+      .lookup<ffi.NativeFunction<FfiFunction>>('testFFi')
       .asFunction();
+
+
+ ffit();
+
+
   // Call the function
-  hello();
+  //hello();
 }

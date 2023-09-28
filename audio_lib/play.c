@@ -13,6 +13,9 @@
 uint8_t audioBuffer[BUFFER_SIZE];
 size_t audioBufferIndex = 0;
 
+void testFFi(){
+    printf("ffi working! \n");
+}
 void data_callback(ma_device* pDevice, void* pOutput, const void* pInput, ma_uint32 frameCount)
 {
     ma_encoder* pEncoder = (ma_encoder*)pDevice->pUserData;
