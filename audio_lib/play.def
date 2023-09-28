@@ -1,0 +1,3 @@
+LIBRARY   audio_lib
+EXPORTS
+   audio_lib

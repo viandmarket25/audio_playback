@@ -1,4 +1,4 @@
-name: hello_world_ffi
+name: audio_lib
 version: 0.0.1
 description: >-
   A super simple example of calling C code from Dart with FFI
@@ -7,10 +7,14 @@ description: >-
 publish_to: none
 
 environment:
-  sdk: ^3.0.0
+  sdk: ">=2.7.0 <5.0.0"
 
 dependencies:
   path: ^1.8.3
+
+
+dependency_overrides:
+  lints: ^2.1.0
 
 dev_dependencies:
   lints: ^2.1.0
@@ -18,5 +22,5 @@ dev_dependencies:
   # test_utils depends on code elsewhere in the samples repository.
   # You can reference it for useful cross-platform testing functionality
   # or remove it if you want to use this example standalone.
-  test_utils:
-    path: ../test_utils
+  #test_utils:
+    #path: ../test_utils

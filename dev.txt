@@ -4,9 +4,28 @@ gcc -o audio_playback aud.c -lportaudio
 gcc -o audio_p audio_process.c -lportaudio -lspeexdsp
 
 
-
-
 gcc -o audio audio_play.c 
 
 
 gcc -o play play.c -ldl -lpthread -lm -framework CoreAudio -framework CoreFoundation
+
+
+// ::::::::::::::: compile miniaudio
+
+gcc -o play play.c -ldl -lpthread -lm -framework CoreAudio -framework CoreFoundation
+
+// ::::::::: play it by
+
+./play s.wav
+
+
+
+gcc -o play play2.c -ldl -lpthread -lm -framework CoreAudio -framework CoreFoundation
+
+
+
+// ::::::::: i can hear close by conversation at 0.9
+
+
+// :::; pthread
+gcc -o myprogram myprogram.c -lpthread

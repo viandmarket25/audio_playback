@@ -41,9 +41,12 @@ void data_callback(ma_device* pDevice, void* pOutput, const void* pInput, ma_uin
         }
     }
 
+    // ::::::::::: here i save audio to file,
+    // ::::::::::
     // Write the audio data to the encoder for saving to a file (optional)
     ma_encoder_write_pcm_frames(pEncoder, pInput, frameCount, NULL);
-
+    // ::::::::::
+    
     // Playback the audio by copying the input to the output
     ma_copy_pcm_frames(pOutput, pInput, frameCount, AUDIO_FORMAT, NUM_CHANNELS);
 }

@@ -1,4 +1,0 @@
-/Users/winner/Documents/Source/noise-cancel/audio_playback_mic/CMakeFiles/audio_playback_mic.dir
-/Users/winner/Documents/Source/noise-cancel/audio_playback_mic/CMakeFiles/audio_play.dir
-/Users/winner/Documents/Source/noise-cancel/audio_playback_mic/CMakeFiles/edit_cache.dir
-/Users/winner/Documents/Source/noise-cancel/audio_playback_mic/CMakeFiles/rebuild_cache.dir
