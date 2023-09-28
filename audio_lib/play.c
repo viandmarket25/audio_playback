@@ -1,5 +1,5 @@
 #define MINIAUDIO_IMPLEMENTATION
-#include "miniaudio/miniaudio.h"
+#include "../miniaudio/miniaudio.h"
 #include <stdio.h>
 #include <stdint.h>
 

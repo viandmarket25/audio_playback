@@ -43,5 +43,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/audio_lib.dir/DependInfo.cmake"
-  "CMakeFiles/audio_play.dir/DependInfo.cmake"
+  "CMakeFiles/audio_lib_exec.dir/DependInfo.cmake"
   )

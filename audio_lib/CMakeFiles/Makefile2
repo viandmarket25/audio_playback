@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /Users/winner/Documents/Source/noise-cancel/audio_lib
 
 # The main recursive "all" target.
 all: CMakeFiles/audio_lib.dir/all
-all: CMakeFiles/audio_play.dir/all
+all: CMakeFiles/audio_lib_exec.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/audio_lib.dir/clean
-clean: CMakeFiles/audio_play.dir/clean
+clean: CMakeFiles/audio_lib_exec.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -103,30 +103,30 @@ CMakeFiles/audio_lib.dir/clean:
 .PHONY : CMakeFiles/audio_lib.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/audio_play.dir
+# Target rules for target CMakeFiles/audio_lib_exec.dir
 
 # All Build rule for target.
-CMakeFiles/audio_play.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/winner/Documents/Source/noise-cancel/audio_lib/CMakeFiles --progress-num=3,4 "Built target audio_play"
-.PHONY : CMakeFiles/audio_play.dir/all
+CMakeFiles/audio_lib_exec.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/winner/Documents/Source/noise-cancel/audio_lib/CMakeFiles --progress-num=3,4 "Built target audio_lib_exec"
+.PHONY : CMakeFiles/audio_lib_exec.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/audio_play.dir/rule: cmake_check_build_system
+CMakeFiles/audio_lib_exec.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winner/Documents/Source/noise-cancel/audio_lib/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/audio_play.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/audio_lib_exec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winner/Documents/Source/noise-cancel/audio_lib/CMakeFiles 0
-.PHONY : CMakeFiles/audio_play.dir/rule
+.PHONY : CMakeFiles/audio_lib_exec.dir/rule
 
 # Convenience name for target.
-audio_play: CMakeFiles/audio_play.dir/rule
-.PHONY : audio_play
+audio_lib_exec: CMakeFiles/audio_lib_exec.dir/rule
+.PHONY : audio_lib_exec
 
 # clean rule for target.
-CMakeFiles/audio_play.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/clean
-.PHONY : CMakeFiles/audio_play.dir/clean
+CMakeFiles/audio_lib_exec.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/clean
+.PHONY : CMakeFiles/audio_lib_exec.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

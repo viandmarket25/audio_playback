@@ -3,7 +3,7 @@ project(audio_playback_mic VERSION 1.0.0 LANGUAGES C)
 
 
 add_library(audio_lib SHARED play.c play.def)
-add_executable(audio_lib play.c)
+add_executable(audio_lib_exec play.c)
 
 
 

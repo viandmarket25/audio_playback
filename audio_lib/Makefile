@@ -130,17 +130,17 @@ audio_lib/fast:
 .PHONY : audio_lib/fast
 
 #=============================================================================
-# Target rules for targets named audio_play
+# Target rules for targets named audio_lib_exec
 
 # Build rule for target.
-audio_play: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audio_play
-.PHONY : audio_play
+audio_lib_exec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audio_lib_exec
+.PHONY : audio_lib_exec
 
 # fast build rule for target.
-audio_play/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/build
-.PHONY : audio_play/fast
+audio_lib_exec/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/build
+.PHONY : audio_lib_exec/fast
 
 play.o: play.c.o
 .PHONY : play.o
@@ -148,7 +148,7 @@ play.o: play.c.o
 # target to build an object file
 play.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib.dir/build.make CMakeFiles/audio_lib.dir/play.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/play.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/play.c.o
 .PHONY : play.c.o
 
 play.i: play.c.i
@@ -157,7 +157,7 @@ play.i: play.c.i
 # target to preprocess a source file
 play.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib.dir/build.make CMakeFiles/audio_lib.dir/play.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/play.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/play.c.i
 .PHONY : play.c.i
 
 play.s: play.c.s
@@ -166,7 +166,7 @@ play.s: play.c.s
 # target to generate assembly for a file
 play.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib.dir/build.make CMakeFiles/audio_lib.dir/play.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_play.dir/build.make CMakeFiles/audio_play.dir/play.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_lib_exec.dir/build.make CMakeFiles/audio_lib_exec.dir/play.c.s
 .PHONY : play.c.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... audio_lib"
-	@echo "... audio_play"
+	@echo "... audio_lib_exec"
 	@echo "... play.o"
 	@echo "... play.i"
 	@echo "... play.s"

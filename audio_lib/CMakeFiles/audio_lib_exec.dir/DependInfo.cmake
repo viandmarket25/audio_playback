@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/winner/Documents/Source/noise-cancel/audio_lib/play.c" "CMakeFiles/audio_play.dir/play.c.o" "gcc" "CMakeFiles/audio_play.dir/play.c.o.d"
+  "/Users/winner/Documents/Source/noise-cancel/audio_lib/play.c" "CMakeFiles/audio_lib_exec.dir/play.c.o" "gcc" "CMakeFiles/audio_lib_exec.dir/play.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
